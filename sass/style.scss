@@ -26,18 +26,32 @@ header {
 .navigation{	
 		padding-top: 2.921%;
 		margin-left: 18.5%;
+		font-family: sans-serif;
+		color:$text-color;
+
 	div:first-child{
+			width: 100px;
 		div:first-child{
 			background:url('../img/logo.gif') no-repeat;
 			width: 70px;
 			height: 66px;			
 		}
-		div:last-child{
-			font-family: sans-serif;
-			color:$text-color;
+		div:last-child{		
 			font-size: 0.844em;
-			margin-top: 1%;
+			margin-top: 9%;
 			line-height: 1.5;
+			margin-left: -0.01%;
+		}
+	}
+	div:first-child + div{
+		float: left;
+		margin-top: -6.5%;
+		margin-left: 7.5%;
+		a{		
+			color:$text-color;
+			text-decoration: underline;
+			font-style: italic;
+			font-size: 0.7em;
 		}
 	}
 }
