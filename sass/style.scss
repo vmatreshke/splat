@@ -1,7 +1,44 @@
 @import "compass/reset";
 
-$color: blue;
+$header_bg_color:#f0f3f5;
+$content_bg_color:#ffffff;
+$text-color:#807c7d;
 
-h1 {
-	color: $color;
+.wrapper {
+	width: 100%;
+	height: 2200px;
 }
+
+header {
+	width: 100%;
+	background-color: $header_bg_color;
+	height: 30.9%;
+}
+
+
+
+.content{
+	width: 100%;
+	background-color: $content_bg_color;
+	height: 69.1%
+}
+
+.navigation{	
+		padding-top: 2.921%;
+		margin-left: 18.5%;
+	div:first-child{
+		div:first-child{
+			background:url('../img/logo.gif') no-repeat;
+			width: 70px;
+			height: 66px;			
+		}
+		div:last-child{
+			font-family: sans-serif;
+			color:$text-color;
+			font-size: 0.844em;
+			margin-top: 1%;
+			line-height: 1.5;
+		}
+	}
+}
+
