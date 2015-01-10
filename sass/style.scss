@@ -3,6 +3,7 @@
 $header_bg_color:#f0f3f5;
 $content_bg_color:#ffffff;
 $text-color:#807c7d;
+$nav_color:#d0003e;
 
 .wrapper {
 	width: 100%;
@@ -54,5 +55,26 @@ header {
 			font-size: 0.7em;
 		}
 	}
+
+	nav{
+		float: left;
+		margin-top: -6.7%;
+		font-size: 0.9em;		
+		text-decoration: underline;
+		line-height: 2.2;
+
+		a{
+			color: $nav_color;
+		}
+	}
+
+	nav.first-nav-list{			
+		margin-left: 21.8%;
+		}
+
+	nav.second-nav-list{
+		margin-left: 6.9%;
+	}
+	
 }
 

@@ -102,3 +102,19 @@ header {
   font-style: italic;
   font-size: 0.7em;
 }
+.navigation nav {
+  float: left;
+  margin-top: -6.7%;
+  font-size: 0.9em;
+  text-decoration: underline;
+  line-height: 2.2;
+}
+.navigation nav a {
+  color: #d0003e;
+}
+.navigation nav.first-nav-list {
+  margin-left: 21.8%;
+}
+.navigation nav.second-nav-list {
+  margin-left: 6.9%;
+}
