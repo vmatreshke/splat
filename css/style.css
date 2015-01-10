@@ -124,13 +124,33 @@ header {
   margin-top: -6.2%;
   font-size: 0.9em;
 }
-.navigation div:last-child div:first-child {
-  width: 150px;
+
+.fb-link {
+  min-width: 150px;
   text-decoration: underline;
 }
-.navigation div:last-child div:first-child a {
+.fb-link a {
   color: #807c7d;
 }
-.navigation div:last-child div:first-child span {
+.fb-link span {
   color: #5674b9;
+}
+
+.search .search {
+  width: 300px;
+  border: none;
+  min-height: 20px;
+}
+.search input[type="search"] {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  width: 274px;
+  vertical-align: middle;
+}
+.search input[type="submit"] {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: url("../img/search.png") no-repeat;
 }
