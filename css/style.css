@@ -118,3 +118,19 @@ header {
 .navigation nav.second-nav-list {
   margin-left: 6.9%;
 }
+.navigation div:last-child {
+  float: left;
+  margin-left: 22.4%;
+  margin-top: -6.2%;
+  font-size: 0.9em;
+}
+.navigation div:last-child div:first-child {
+  width: 150px;
+  text-decoration: underline;
+}
+.navigation div:last-child div:first-child a {
+  color: #807c7d;
+}
+.navigation div:last-child div:first-child span {
+  color: #5674b9;
+}

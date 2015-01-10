@@ -4,6 +4,7 @@ $header_bg_color:#f0f3f5;
 $content_bg_color:#ffffff;
 $text-color:#807c7d;
 $nav_color:#d0003e;
+$fb_color:#5674b9;
 
 .wrapper {
 	width: 100%;
@@ -74,6 +75,24 @@ header {
 
 	nav.second-nav-list{
 		margin-left: 6.9%;
+	}
+
+	div:last-child{
+		float: left;
+		margin-left: 22.4%;
+		margin-top: -6.2%;
+		font-size: 0.9em;
+
+		div:first-child{
+			width: 150px;
+			text-decoration: underline;
+			a{
+				color:$text_color;				
+			}
+			span{
+				color: $fb_color;
+			}
+		}
 	}
 	
 }
