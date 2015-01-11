@@ -6,6 +6,7 @@ $content_bg_color:#ffffff;
 $text-color:#807c7d;
 $nav_color:#d0003e;
 $fb_color:#5674b9;
+$separator_color:#e1e4e6;
 
 *:focus {outline: none;}
 
@@ -126,5 +127,21 @@ header {
 		background:url('../img/search.png') no-repeat;
 	}
 }
+
+.separator-lite{
+	display: block;
+	margin-top: 7%;
+	width: 89.6%;
+	margin-left: 8%;
+	hr{
+		border: 0;
+	    height: 0;
+	    border-top: 1px solid transparentize($separator_color, 0.2);
+	}	
+}
+
+
+
+
 
 
