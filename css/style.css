@@ -55,6 +55,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 header {
+  min-width: 800px;
   background-color: #f0f3f5;
   min-height: 680px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -62,6 +63,15 @@ header {
 
 .head {
   padding-top: 39px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2FhYWFhYSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #aaaaaa));
+  background-image: -moz-linear-gradient(#ffffff, #aaaaaa);
+  background-image: -webkit-linear-gradient(#ffffff, #aaaaaa);
+  background-image: linear-gradient(#ffffff, #aaaaaa);
+}
+.head .container {
+  width: 1000px;
 }
 .head a {
   color: #807c7d;
@@ -107,8 +117,30 @@ header {
   text-decoration: underline;
 }
 .head .search {
+  margin-top: 61px;
   text-align: right;
   margin-right: auto;
+}
+.head .search input[type=text] {
+  vertical-align: baseline;
+  outline: none;
+  -webkit-appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-right: -35px;
+  width: 221px;
+  height: 26px;
+  @-moz-box-shadow : 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white;
+}
+.head .search input[type=button] {
+  right: -2px;
+  top: 3px;
+  border: none;
+  background: url("../img/search.png") no-repeat 50% 50%;
+  width: 32px;
+  height: 22px;
+  position: relative;
 }
 
 .text_logo {

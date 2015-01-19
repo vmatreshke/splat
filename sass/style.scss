@@ -1,17 +1,30 @@
 @import "compass/reset";
+@import "compass";
+
 $bg_color_header: #f0f3f5;
 $text_color: #807c7d;
 $nav_color:red;
 $fb_color:blue;
+$form_color:gray;
+$grad_top_c:white;
+$grad_bot_c:#aaa;
 
 header{
+	min-width: 800px;
 	background-color: $bg_color_header;
 	min-height: 680px;
 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+
 .head{
 	padding-top: 39px;
+	@include background-image(linear-gradient($grad_top_c, $grad_bot_c));
+
+	.container{
+	width: 1000px;
+}
+
 
 	a{		
 		color: $text_color;
@@ -63,10 +76,34 @@ header{
 	}
 
 	.search{
+		margin-top: 61px;
 		text-align: right;
 		margin-right: auto; 
-		}
-	
+
+			input[type=text]{
+				vertical-align: baseline;
+				outline: none;
+				-webkit-appearance: none;
+				border: 1px solid transparentize(rgba(0, 0, 0, 0.5), 0.35);
+				margin-right: -35px;
+				width: 221px;
+				height: 26px;
+				@-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+         		-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+         		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+
+			}
+
+			input[type=button]{
+				right: -2px;
+				top: 3px;
+				border: none;
+				background: url('../img/search.png') no-repeat 50% 50%;
+				width: 32px;
+				height: 22px;
+				position: relative;
+			}			
+		}		
 }
 
 .text_logo{
