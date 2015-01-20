@@ -10,20 +10,28 @@ $grad_top_c:#f4f6f8;
 $grad_bot_c:#e9edf0;
 
 header{
-	min-width: 800px;
 	background-color: $bg_color_header;
 	min-height: 680px;
 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+	hr{
+		margin-top: -2px;
+		width: 1140px;
+		border-bottom: 1px solid transparentize(rgba(0, 0, 0, 0.5), 0.45);
+	}
+
+	.container{
+	width: 1000px;
 }
 
 
 .head{
 	height: 200px;
-	padding-top: 39px;
+	padding-top: 39px;	
 	@include background-image(linear-gradient($grad_top_c, $grad_bot_c));
 
-	.container{
-	width: 1000px;
+	
+
 }
 
 
@@ -91,7 +99,7 @@ header{
 				height: 26px;
 				@-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
          		-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
-         		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+         		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 0 0 rgba(255, 255, 255, 1);
 
 			}
 
@@ -113,5 +121,48 @@ header{
 	font-size: 13px;
 	margin: 10px 1px;
 }
+
+.head-slider{
+	color:$text_color;
+	margin-top: 44px;
+	.idea{
+		background: url(../img/idea.png) no-repeat top left;
+		 height:86px; 
+		 width:80px;
+	}
+
+	.quality{
+		background: url(../img/qality.png) no-repeat top left;
+		 height:55px; 
+		 width:50px;
+		 margin-top: 28px;
+	}
+
+	.result{
+		background: url(../img/result.png) no-repeat top left;
+		 height:78px; 
+		 width:43px;		 
+		 margin-top: 7px;
+	}
+
+	.eco{
+		background: url(../img/eco.png) no-repeat top left;
+		 height:62px; 
+		 width:44px;		 
+		 margin-top: 23px;
+	}
+
+	 h1{
+	 	font-size: 24px;
+	 	//padding-left: 13px;
+	 }
+
+	 .head-text{
+	 	padding-right: 25px;
+	 	margin-top: 17px;
+	 	min-width: 245px;
+	 }
+}
+
 
 
