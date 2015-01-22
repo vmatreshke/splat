@@ -8,6 +8,7 @@ $fb_color:#5674b9;
 $form_color:gray;
 $grad_top_c:#f4f6f8;
 $grad_bot_c:#e9edf0;
+$nav_slider_color:#bbb;
 
 header{
 	background-color: $bg_color_header;
@@ -29,12 +30,7 @@ header{
 	height: 200px;
 	padding-top: 39px;	
 	@include background-image(linear-gradient($grad_top_c, $grad_bot_c));
-
-	
-
 }
-
-
 	a{		
 		color: $text_color;
 		text-decoration: underline;
@@ -123,7 +119,7 @@ header{
 }
 
 .head-slider{
-	color:$text_color;
+	color:transparentize(rgba(0, 0, 0, 1), 0.4);
 	margin-top: 44px;
 	.idea{
 		background: url(../img/idea.png) no-repeat top left;
@@ -154,13 +150,28 @@ header{
 
 	 h1{
 	 	font-size: 24px;
-	 	//padding-left: 13px;
 	 }
 
 	 .head-text{
 	 	padding-right: 25px;
 	 	margin-top: 17px;
 	 	min-width: 245px;
+	 }
+
+	 .carousel{
+	 	margin-top: 33px;
+	 	height: 5px;
+	 	width: 100%;
+	 	background-color: $nav_slider_color;
+	 	z-index: 1;
+	 }
+
+	 .On{
+	 	position: relative;
+	 	z-index: 2;
+	 	background-color: $nav_color;
+	 	width: 100px;
+	 	height: 5px;
 	 }
 }
 
