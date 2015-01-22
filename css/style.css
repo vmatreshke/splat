@@ -155,7 +155,7 @@ header .search input[type=button] {
 }
 
 .head-slider {
-  color: #807c7d;
+  color: rgba(0, 0, 0, 0.6);
   margin-top: 44px;
 }
 .head-slider .idea {
@@ -188,4 +188,18 @@ header .search input[type=button] {
   padding-right: 25px;
   margin-top: 17px;
   min-width: 245px;
+}
+.head-slider .carousel {
+  margin-top: 33px;
+  height: 5px;
+  width: 100%;
+  background-color: #bbb;
+  z-index: 1;
+}
+.head-slider .On {
+  position: relative;
+  z-index: 2;
+  background-color: #d0003e;
+  width: 100px;
+  height: 5px;
 }
