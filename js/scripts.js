@@ -1,15 +1,15 @@
-$(document).ready(function(){	
+/*$(document).ready(function(){	
 	var countClick = 0;
 
 	$('.carousel').append('<div class="On"></div>');
 
 	$('.carousel').click(function(){		
-		if(countClick === 2)
+		if(countClick === 4)
 		{
-			$('.On').animate({left: '-=204px'},500);
+			$('.On').animate({left: '-=79.9917356687898%'},500);
 			countClick = 0;
 		}else {
-			$('.On').animate({left: '+=102px'}, 500);
+			$('.On').animate({left: '+=20%'}, 500);
 			countClick++;
 		}
 
@@ -20,8 +20,5 @@ $(document).ready(function(){
 		
 		});
 
-    	
-
-	});
-			
-});
+	});			
+});*/

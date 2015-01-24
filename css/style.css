@@ -54,6 +54,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+body hr {
+  margin-top: -2px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 header {
   background-color: #f0f3f5;
   min-height: 680px;
@@ -158,6 +163,9 @@ header .search input[type=button] {
   color: rgba(0, 0, 0, 0.6);
   margin-top: 44px;
 }
+.head-slider .col-md-3 {
+  height: 390px;
+}
 .head-slider .idea {
   background: url(../img/idea.png) no-repeat top left;
   height: 86px;
@@ -190,7 +198,6 @@ header .search input[type=button] {
   min-width: 245px;
 }
 .head-slider .carousel {
-  margin-top: 33px;
   height: 5px;
   width: 100%;
   background-color: #bbb;
@@ -200,6 +207,6 @@ header .search input[type=button] {
   position: relative;
   z-index: 2;
   background-color: #d0003e;
-  width: 100px;
+  width: 20%;
   height: 5px;
 }

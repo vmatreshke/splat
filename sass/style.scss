@@ -10,6 +10,11 @@ $grad_top_c:#f4f6f8;
 $grad_bot_c:#e9edf0;
 $nav_slider_color:#bbb;
 
+body hr{
+	margin-top: -2px;
+	border-bottom: 1px solid transparentize(rgba(0, 0, 0, 0.5), 0.45);
+}
+
 header{
 	background-color: $bg_color_header;
 	min-height: 680px;
@@ -121,6 +126,9 @@ header{
 .head-slider{
 	color:transparentize(rgba(0, 0, 0, 1), 0.4);
 	margin-top: 44px;
+	.col-md-3{
+		height: 390px;
+	}
 	.idea{
 		background: url(../img/idea.png) no-repeat top left;
 		 height:86px; 
@@ -159,7 +167,6 @@ header{
 	 }
 
 	 .carousel{
-	 	margin-top: 33px;
 	 	height: 5px;
 	 	width: 100%;
 	 	background-color: $nav_slider_color;
@@ -170,10 +177,11 @@ header{
 	 	position: relative;
 	 	z-index: 2;
 	 	background-color: $nav_color;
-	 	width: 100px;
+	 	width: 20%;
 	 	height: 5px;
 	 }
 }
+
 
 
 
