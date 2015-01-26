@@ -210,3 +210,23 @@ header .search input[type=button] {
   width: 20%;
   height: 5px;
 }
+
+.content-slider {
+  height: 480px;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+section .bold {
+  border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.news .content {
+  background-color: #f0f3f5;
+  height: 205px;
+  margin-top: -20px;
+}
