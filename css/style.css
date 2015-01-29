@@ -54,6 +54,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+body nav {
+  margin: 0px auto;
+  padding: 0px;
+  vertical-align: top;
+}
+body nav a {
+  display: block;
+  color: #d0003e;
+  line-height: 2;
+  font-size: 14px;
+  vertical-align: top;
+  font-style: normal;
+  text-decoration: underline;
+}
+body nav a:hover {
+  color: #d0003e;
+  text-decoration: none;
+}
+
 body hr {
   margin-top: -2px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -91,23 +110,6 @@ header a {
 }
 header a:hover {
   color: #807c7d;
-  text-decoration: none;
-}
-header nav {
-  margin: 0px auto;
-  padding: 0px;
-  vertical-align: top;
-}
-header nav a {
-  display: block;
-  color: #d0003e;
-  line-height: 2;
-  font-size: 14px;
-  vertical-align: top;
-  font-style: normal;
-}
-header nav a:hover {
-  color: #d0003e;
   text-decoration: none;
 }
 header .fb {
@@ -219,7 +221,7 @@ section {
   margin: 0;
   padding: 0;
 }
-section .bold {
+section hr.bold {
   border-bottom: 5px solid rgba(0, 0, 0, 0.2);
   width: 100%;
   vertical-align: bottom;
@@ -245,4 +247,14 @@ section .bold {
   position: relative;
   bottom: 166px;
   border-bottom: 1px solid transparent;
+}
+
+.about {
+  margin-left: -28px;
+}
+.about .feedback {
+  padding: 10px 42px;
+  background-color: #f0f3f5;
+  border-top: 5px solid rgba(0, 0, 0, 0.2);
+  height: 100%;
 }

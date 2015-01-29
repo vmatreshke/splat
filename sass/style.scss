@@ -10,7 +10,27 @@ $grad_top_c:#f4f6f8;
 $grad_bot_c:#e9edf0;
 $nav_slider_color:#bbb;
 
+body{
+	nav{
+		margin: 0px auto;
+		padding: 0px;
+		vertical-align: top;
+		a{
+			display: block;
+			color: $nav_color;
+			line-height: 2;
+			font-size: 14px;		
+			vertical-align: top;		
+			font-style: normal;
+			text-decoration: underline;
 
+			&:hover{
+				color:$nav_color;
+				text-decoration: none;
+			}
+		}
+}
+}
 body hr{
 	margin-top: -2px;
 	border-bottom: 1px solid transparentize(rgba(0, 0, 0, 0.5), 0.45);
@@ -32,6 +52,7 @@ header{
 }
 
 
+
 .head{
 	height: 200px;
 	padding-top: 39px;	
@@ -50,25 +71,7 @@ header{
 			}
 	}
 
-	nav{
-		margin: 0px auto;
-		padding: 0px;
-		vertical-align: top;
-		a{
-			display: block;
-			color: $nav_color;
-			line-height: 2;
-			font-size: 14px;		
-			vertical-align: top;		
-			font-style: normal;
-
-			&:hover{
-				color:$nav_color;
-				text-decoration: none;
-			}
-		}
-	}
-
+	
 	.fb{
 		text-align: right;
 		span{
@@ -190,7 +193,7 @@ header{
 section{
 	margin: 0;
 	padding: 0;
- .bold{
+ hr.bold{
 		border-bottom: 5px solid transparentize(rgba(0, 0, 0, 0.5), 0.3);
 		width: 100%;
 		vertical-align: bottom;
@@ -223,4 +226,14 @@ section{
 	position: relative;
 	bottom: 166px;
 	border-bottom: 1px solid transparentize(rgba(0, 0, 0, 0.5), 0.5);
+}
+
+.about{
+	margin-left: -28px;
+	.feedback{
+		padding: 10px 42px;
+		background-color: $bg_color_header;
+		border-top: 5px solid transparentize(rgba(0, 0, 0, 0.5), 0.3);
+		height: 100%;
+	}
 }
