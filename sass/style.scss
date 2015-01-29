@@ -236,4 +236,18 @@ section{
 		border-top: 5px solid transparentize(rgba(0, 0, 0, 0.5), 0.3);
 		height: 100%;
 	}
+
+	.buying{
+		margin-top: 20px;
+		background-color: $bg_color_header;
+		height: 100%;
+		h1{
+			font-size: 25px;
+			padding: 10px;
+
+			a{
+				color: $nav_color;
+			}
+		}
+	}
 }
