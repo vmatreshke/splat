@@ -230,3 +230,19 @@ section .bold {
   height: 205px;
   margin-top: -20px;
 }
+.news a {
+  color: #d0003e;
+  font-size: 14px;
+  vertical-align: top;
+  font-style: normal;
+}
+.news .col-md-3 {
+  padding: 39px 6px 34px 46px;
+}
+
+.separate-news {
+  z-index: -1;
+  position: relative;
+  bottom: 166px;
+  border-bottom: 1px solid transparent;
+}
