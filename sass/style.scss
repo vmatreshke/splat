@@ -9,6 +9,7 @@ $form_color:gray;
 $grad_top_c:#f4f6f8;
 $grad_bot_c:#e9edf0;
 $nav_slider_color:#bbb;
+$content_text:transparentize(rgba(0, 0, 0, 1), 0.4);
 
 body{
 	nav{
@@ -31,7 +32,8 @@ body{
 		}
 	}
 	footer{
-		margin-top: 50px;
+		margin-top: 50px;	
+		
 	}
 }
 body hr{
@@ -131,7 +133,7 @@ header{
 }
 
 .head-slider{
-	color:transparentize(rgba(0, 0, 0, 1), 0.4);
+	color:$content_text;
 	margin-top: 44px;
 	.col-md-3{
 		height: 390px;
@@ -206,7 +208,7 @@ section{
 
 .news{
 	.content{	
-		color:$text_color; 	
+		color:$content_text; 	
 		background-color: $bg_color_header;		
 		height: 205px;
 		margin-top: -20px;
@@ -271,6 +273,7 @@ section{
 		}
 
 		p{
+			color:$content_text;
 			margin: -9px 75px;
 			padding-bottom: 27px;
 			width: 200px;
@@ -283,7 +286,7 @@ section{
 			display: inline-block;
 			width: 80%;
 			font-size:17px;
-			color:$text_color; 
+			color:$content_text; 
 			line-height: 2;
 			span{
 			display: block;
@@ -301,3 +304,33 @@ section{
 	}
 }
 
+.copyright{
+	img{
+		display: block;
+		float: left;
+	}
+
+	p{
+		float: left;
+		margin-left: 25px;				
+		color: $text_color;
+		font-size: 12px;	
+		a{
+			color: $nav_color;
+			font-size: 12px;			
+			font-style: normal;
+			text-decoration: underline;
+			&:hover{
+				color:$nav_color;
+				text-decoration: none;
+			}
+		}	
+	}	
+}
+
+.using{
+		
+			color: $text_color;
+			font-size: 12px;
+		
+	}

@@ -231,7 +231,7 @@ section hr.bold {
 }
 
 .news .content {
-  color: #807c7d;
+  color: rgba(0, 0, 0, 0.6);
   background-color: #f0f3f5;
   height: 205px;
   margin-top: -20px;
@@ -290,6 +290,7 @@ section hr.bold {
   color: #d0003e;
 }
 .about .buying p {
+  color: rgba(0, 0, 0, 0.6);
   margin: -9px 75px;
   padding-bottom: 27px;
   width: 200px;
@@ -299,7 +300,7 @@ section hr.bold {
   display: inline-block;
   width: 80%;
   font-size: 17px;
-  color: #807c7d;
+  color: rgba(0, 0, 0, 0.6);
   line-height: 2;
 }
 .about .text > article span {
@@ -311,4 +312,30 @@ section hr.bold {
 .about + hr {
   margin-top: 65px;
   border-bottom: 0px;
+}
+
+.copyright img {
+  display: block;
+  float: left;
+}
+.copyright p {
+  float: left;
+  margin-left: 25px;
+  color: #807c7d;
+  font-size: 12px;
+}
+.copyright p a {
+  color: #d0003e;
+  font-size: 12px;
+  font-style: normal;
+  text-decoration: underline;
+}
+.copyright p a:hover {
+  color: #d0003e;
+  text-decoration: none;
+}
+
+.using {
+  color: #807c7d;
+  font-size: 12px;
 }
