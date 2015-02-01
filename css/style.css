@@ -228,6 +228,7 @@ section hr.bold {
 }
 
 .news .content {
+  color: #807c7d;
   background-color: #f0f3f5;
   height: 205px;
   margin-top: -20px;
@@ -251,6 +252,7 @@ section hr.bold {
 
 .about {
   margin-left: -28px;
+  margin-top: 65px;
 }
 .about .feedback {
   padding: 10px 42px;
@@ -260,13 +262,42 @@ section hr.bold {
 }
 .about .buying {
   margin-top: 20px;
+  background: url(../img/map.png) no-repeat 28px 25px;
   background-color: #f0f3f5;
   height: 100%;
 }
+.about .buying .triangle {
+  position: absolute;
+  top: 185px;
+  left: 247px;
+  width: 0;
+  height: 0;
+  border: 15px solid white;
+  border-bottom: 15px solid rgba(0, 0, 0, 0.17);
+  border-left: 15px solid rgba(0, 0, 0, 0.18);
+}
 .about .buying h1 {
+  display: inline-block;
   font-size: 25px;
-  padding: 10px;
+  padding: 5px 81px;
+  width: 291px;
 }
 .about .buying h1 a {
   color: #d0003e;
+}
+.about .buying p {
+  margin: -9px 75px;
+  padding-bottom: 27px;
+  width: 200px;
+}
+.about .text > article {
+  margin: -136px 134px;
+  display: inline-block;
+  width: 80%;
+  font-size: 17px;
+  color: #807c7d;
+}
+.about .text span {
+  font-style: italic;
+  font-size: 14px;
 }

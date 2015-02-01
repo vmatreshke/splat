@@ -203,7 +203,7 @@ section{
 
 .news{
 	.content{	
-			
+		color:$text_color; 	
 		background-color: $bg_color_header;		
 		height: 205px;
 		margin-top: -20px;
@@ -230,6 +230,8 @@ section{
 
 .about{
 	margin-left: -28px;
+	margin-top: 65px;
+
 	.feedback{
 		padding: 10px 42px;
 		background-color: $bg_color_header;
@@ -239,15 +241,48 @@ section{
 
 	.buying{
 		margin-top: 20px;
+		background: url(../img/map.png) no-repeat 28px 25px;
 		background-color: $bg_color_header;
 		height: 100%;
+		.triangle{
+			position: absolute;
+			top: 185px;
+			left: 247px;
+			width: 0;
+			height: 0;
+			border: 15px solid white;
+			border-bottom: 15px solid rgba(0, 0, 0, 0.17);
+			border-left: 15px solid rgba(0, 0, 0, 0.18);
+		}
 		h1{
+			display: inline-block;
 			font-size: 25px;
-			padding: 10px;
+			padding: 5px 81px;
+			width: 291px;
 
 			a{
 				color: $nav_color;
 			}
+		}
+
+		p{
+			margin: -9px 75px;
+			padding-bottom: 27px;
+			width: 200px;
+		}
+	}
+
+	.text{ 	
+		&>article{
+			margin: -136px 134px;
+			display: inline-block;
+			width: 80%;
+			font-size:17px;
+			color:$text_color; 
+		}
+		span{
+			font-style: italic;
+			font-size: 14px;
 		}
 	}
 }
