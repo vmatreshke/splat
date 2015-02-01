@@ -29,7 +29,10 @@ body{
 				text-decoration: none;
 			}
 		}
-}
+	}
+	footer{
+		margin-top: 50px;
+	}
 }
 body hr{
 	margin-top: -2px;
@@ -245,9 +248,9 @@ section{
 		background-color: $bg_color_header;
 		height: 100%;
 		.triangle{
-			position: absolute;
-			top: 185px;
-			left: 247px;
+			position:relative;
+			top: 0;
+			left: 232px;
 			width: 0;
 			height: 0;
 			border: 15px solid white;
@@ -257,8 +260,10 @@ section{
 		h1{
 			display: inline-block;
 			font-size: 25px;
-			padding: 5px 81px;
+			padding: 1px 81px;
+			margin-top: -5px;
 			width: 291px;
+
 
 			a{
 				color: $nav_color;
@@ -279,10 +284,20 @@ section{
 			width: 80%;
 			font-size:17px;
 			color:$text_color; 
-		}
-		span{
+			line-height: 2;
+			span{
+			display: block;
 			font-style: italic;
 			font-size: 14px;
+			line-height: 1.5;
+			}
 		}
+
+	}
+
+	&+hr{
+		margin-top: 65px;
+		border-bottom: 0px;
 	}
 }
+

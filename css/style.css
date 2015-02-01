@@ -72,6 +72,9 @@ body nav a:hover {
   color: #d0003e;
   text-decoration: none;
 }
+body footer {
+  margin-top: 50px;
+}
 
 body hr {
   margin-top: -2px;
@@ -267,9 +270,9 @@ section hr.bold {
   height: 100%;
 }
 .about .buying .triangle {
-  position: absolute;
-  top: 185px;
-  left: 247px;
+  position: relative;
+  top: 0;
+  left: 232px;
   width: 0;
   height: 0;
   border: 15px solid white;
@@ -279,7 +282,8 @@ section hr.bold {
 .about .buying h1 {
   display: inline-block;
   font-size: 25px;
-  padding: 5px 81px;
+  padding: 1px 81px;
+  margin-top: -5px;
   width: 291px;
 }
 .about .buying h1 a {
@@ -296,8 +300,15 @@ section hr.bold {
   width: 80%;
   font-size: 17px;
   color: #807c7d;
+  line-height: 2;
 }
-.about .text span {
+.about .text > article span {
+  display: block;
   font-style: italic;
   font-size: 14px;
+  line-height: 1.5;
+}
+.about + hr {
+  margin-top: 65px;
+  border-bottom: 0px;
 }

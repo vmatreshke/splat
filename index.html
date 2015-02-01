@@ -21,7 +21,15 @@
     <![endif]-->
 </head>
 <body>
-
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";
+  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 	<header>
 		<div class="head">
 			<div class="container">
@@ -156,7 +164,7 @@
 							<a href="#askUs">Задать вопрос эксперту</a>
 							<a href="#recomends">Рекомендации экспертов</a>
 							<a href="#share">Поделиться идеей</a>
-							<a href="#competition"></a>
+							<a href="#competition">Конкурсы</a>
 						</nav>
 					</div>
 					<div class="buying">
@@ -169,12 +177,27 @@
 				
 				<div class="col-md-8 col-md-offset-1">
 				<div class="text"><img src="img/man.png" height="130" width="95" alt="the main man">
-					<article>Когда вкладываешь всю душу в то, что создаешь, получаешь поистине бесценный результат. Когда веришь, что нет ничего невозможного, и самые смелые желания обретают форму, понимаешь, твой путь пройден не зря. Мы искренне верим - каждый способен изменить мир к лучшему. Создавая продукты под маркой SPLAT, мы знаем, что всё тепло, вложенное в них, сделает ваш день ярче, счастливее и добрее. <br><br>Помогать людям, быть здоровыми, красивыми и успешными - наша миссия.<br><br><span>Евгений Демин,<br>Генеральный директор SPLAT</span></article>	</div>
-					
+					<article>Когда вкладываешь всю душу в то, что создаешь, получаешь поистине бесценный результат. Когда веришь, что нет ничего невозможного, и самые смелые желания обретают форму, понимаешь, твой путь пройден не зря. Мы искренне верим - каждый способен изменить мир к лучшему. Создавая продукты под маркой SPLAT, мы знаем, что всё тепло, вложенное в них, сделает ваш день ярче, счастливее и добрее. <br><br>Помогать людям, быть здоровыми, красивыми и успешными - наша миссия.<br><br><span>Евгений Демин,<br>Генеральный директор SPLAT</span></article>	</div>					
 				</div>
 			</div>
 		</div>
 	</section>
+	<hr>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="copyright">
+						<img src="img/logo.gif" alt="Splat - prfessional oral care" width="15%" height="15%">
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+	</footer>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
